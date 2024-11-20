@@ -16,7 +16,7 @@ function App() {
     setAnswer("Loading the quiz... It might take up to 10 seconds");
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAWxhLldGIu93QnDN-JW2XMT3i6lhRAkh4`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=API-KEY`,
         method: "post",
         data: {
           contents: [{ parts: [{ text:  `generate a quiz about ${question} to test the students in my educational website`  }] }],
